@@ -2,81 +2,463 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.l1 {
-    width: 100%;
-    height: 30px;
-    background-color: rgb(5, 61, 37);
-}
-.nav-bar {
-    width: 100%;
-    height: 40px;
-    background-color: rgb(245, 245, 245);
-    padding: 8px;
-    display: flex;
-    color: rgb(81, 81, 81);
-    justify-content: space-around;  
-}
-.nav-bar img {
-    width:20px ;  
-    cursor: pointer; 
-}
-.landing-2 {
-    padding: 100px 400px;
-    display: flex;
-    justify-content: space-between;
-}
-.landing-2 img {
-    width: 300px;
-    height: 370px;
-}
-.landing-2 .details span {
-    font-family: sans-serif;
-}
-h2, h3 {
-    padding: 0 0 5px 0;
-}
-h3 {
-    padding: 10px 0 5px 0;
-}
-h5 {
-    font-family: sans-serif;
-    width: 100px;
-    margin-top: 10px;
-    cursor: pointer;
-    text-align: center;
-    padding: 5px 7px;
-    background-color: rgb(5, 61, 37) ;
-    color:rgb(235, 235, 235) ;
-    border-radius: 3px;
-}
-.footer {
-    background-color: rgb(5, 61, 37);
-    color: rgb(235, 235, 235);
-    padding: 50px 300px;
-    text-align: center;
+#section1 {
+    position: sticky;
+    top: 0;
+    right: 0;
     
 }
-.f1 {
+.header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 50px ;
+    background-color: beige;
+ 
 }
-.f1 div {
-    margin: 0 10px;
+.header h1 {
+    font-size: 30px;
+}
+.header ul li{
+    color: rgb(33, 33, 33);
+    padding: 0 5px;
+    display:inline;
+}
+.header ul li a {
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+}
+.header  ul li a:hover, .hero-name ul li a:hover {
+    text-decoration: underline;
+}
+.hero-name ul li {
+    padding: 0 12px 0 0;
+    display:inline;
+   
+}
+.hero-name ul li a {
+    text-decoration: none;
+}
+.hero-name, .contact {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(180deg, rgb(1, 16, 26), rgb(8, 84, 131));
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+}
+.contact-hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: row;
+}
+.contact-img {
+    background-image: url(img/man_smoke.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+.hero .hero-img {
+    background-image: url(img/man_smoke.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;   
 }
 
-.f1 img {
-    width: 20px;
+.name {
+   display: flex;
+   justify-content: center;
+   padding: 25% 16%;
+   flex-direction: column;
+   text-align: left;
+}
+.name h1 {
+    padding-top: 20px;
+    font-size: 110px;
+    line-height: 90px;
+    color: blanchedalmond;
+}
+.name span {
+    color: rgb(250, 254, 41);
+    font-size: 20px;
+    text-align: left;
+}
+.hero-name .p1{
+    padding: 40px 0 0 10%;
+}
+.hero-name .p1 span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: rgb(254, 229, 41);
+}
+.hero-name .p1 ul {
+    padding-top: 10px;
+}
+
+.hero-name .p1 ul li a {
+    color: rgb(213, 200, 180);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+.pad1 {
+    padding: 80px 60px;
+}
+.pad2 {
+   padding: 60px 0 0 0;
+}
+#About, #reels,#contact {
+    background-color: rgb(228, 228, 228);
+}
+#services {
+    background-color: rgb(8, 84, 131);;
+}
+.about, .reels, .services {
+    text-align: center;
+}
+.about h1, .reels h1, .services h1 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(8, 84, 131);
+}
+.services h1 {
+    padding-top: 30px;
+    color: rgb(228, 228, 228) ;
+}
+.about p, .services p {
+    padding: 30px 340px;
+    line-height: 25px;
+}
+.services p {
+    color:rgb(214, 213, 213);
+}
+.about button, .services button {
+    padding: 10px 12px;
+    background-color:rgb(254, 229, 41) ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color:rgb(8, 84, 131);;
+}
+.about button:hover, .services button:hover {
     cursor: pointer;
+    background-color:rgb(237, 213, 29) ;
+    color:rgb(268, 268, 268);
+}
+.photos .ph1, .ph2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.ph1 {
+    margin-bottom: 10px;
+}
+.photos  .Sph, .photos .sph2{
+    width: 44%;
+    height: 400px;
+    background-image: url(img/zarabank.png);
+    background-position: center;
+    background-size: cover;
+}
+.photos .sph2 {
+    background-image: url(img/home.png);
+}
+
+.photos  .Lph, .photos .lph2{
+    width: 55%;
+    height: 400px;
+    background-image: url(img/onlinebanking.png);
+    background-position: center;
+    background-size: cover;
+}
+.photos .lph2 {
+    background-image: url(img/apha\ mobie\ app.jpg);
+}
+
+.reels h1 {
+    padding-bottom: 60px;
+}
+.photos .ph3 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.photos .ph3 .big {
+    width: 70%;
+    height: 400px;
+    background-image: url(img/original-0a5afae7a8663e4dd3b5b814665ae46f.png);
+    background-position: center;
+    background-size: cover;
+} 
+.photos .ph3 .small {
+    width: 29%;
+    height: 400px;
+    background-image: url(img/onecard1.png);
+    background-position: center;
+    background-size: cover;
+} 
+
+.contact {
+    padding: 10% 10%;
+    color:rgb(226, 222, 222); ;
+}
+.contact h1 {
+    padding: 30px 0;
+    font-size: 40px;
+    color: rgb(237, 213, 29) ;
     
 }
-.f1 p {
-    line-height: 22px;
-    font-family: sans-serif;
+.contact h4 {
+    font-size: 20px;
+    padding: 15px 0 5px 0;
 }
-.icons {
-    padding-top: 4px;
+.contact span {
+    font-size: 17px;
+}
+.detail-socials {
+    margin-top: 10px;
+}
+.detail-socials img{
+    width: 20px;
+    cursor: pointer;
+    margin-right: 0px;
+}
+.detail-socials img:not(:first-child){
+    margin-left: 8px;
+}
+.side-bar {
+    width: 40px;
+    height: 200px;
+    background-color: rgb(237, 213, 29) ;
+    position: fixed;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-40%);
+    right: -20px; padding: 5px;
+}
+.side-bar  img{
+    width: 100%;
+    max-width: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+   
+}
+.mobile-name{
+    display: none;
+}
+.menu-bar {
+    display: none;
+} 
+#section1 {
+    display: block;
+}
+
+@media (max-width: 477px) {
+    .menu-bar {
+        display:block;
+    } 
+    .side-bar {
+       display: none; 
+    }
+    .header {
+        display: none;
+    }
+    .hero-name, .contact {
+        background: rgb(0, 53, 55)
+    }
+    .hero-name {
+        width: 100%;
+        padding: 20px 20px;
+       position: relative;
+    }
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero .hero-img {
+        position: unset;
+        width: 100%;
+    }
+
+    .menu-bar img{
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        width: 25px;
+    }
+    
+    .menu-bar  {
+
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        right: -400px;
+        background: rgb(0, 53, 55);
+        display:block;
+        color: white;
+        text-align: center;
+        display: flex;
+        padding: 150px 0;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+    }
+    .menu-out {
+        transition: none;
+    }
+    .display-menu {
+        right: 0px;
+    }
+    .menu-bar  div {
+        width: 200px;
+        height: 1px;
+        background-color: beige;
+        margin: 12px 0;
+    }
+    .menu-bar {
+        font-size: 25px;
+    }
+    .menu-bar a {
+        text-decoration: none;
+        color: white;
+    }
+    .name {
+        display:none ;
+    }
+    .mobile-name {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+    } 
+    .socials {
+        width: 100%;
+        height: 35px;
+        background-color: rgb(252, 223, 56);
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+    }
+    .socials img{
+        width: 20px;
+        cursor: pointer;
+        margin: 0 25px;
+    }
+    .mns1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .mns1 img {
+        width: 35px;
+    }
+    .mns1 p {
+        color: rgb(236, 209, 77);
+        font-size: 18px;
+        font-family:cursive;
+    }
+    .mobile-name  {
+        color:blanchedalmond ;
+    }
+    .hey {
+        color: rgb(255, 213, 0);
+        font-size:18px;
+        font-family:cursive;
+    }
+    .mobile-name h1 {
+        font-size: 40px;
+        padding: 10px 0;
+        color: blanchedalmond;
+    }
+    .design {
+        font-size: 14px;
+    }
+        /*--About--*/
+
+    .pad1 {
+        padding: 40px 20px;
+    }
+    #contact  {
+        padding: 40px 0;
+    }
+    .about p, .services p {
+        padding: 30px 0;
+        line-height: 28px;
+        
+    }.about h1, .reels h1, .services h1 {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+   
+    .services p, .about p  {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+   .photos .ph1, .ph2, .ph3 {
+    flex-direction: column
+   }
+   .photos .Lph, .photos .Sph {
+    width: 100%;
+    height: 300px;
+   }
+   .photos .ph3 .small {
+    width: 100%;
+    }
+    .photos .ph3 .big {
+        width: 100%;
+        height: 300px;
+    }
+    .contact-hero {
+        flex-direction: column;
+    }
+    .contact-img {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+    }
+   
+    .photos .ph1 div, .photos .ph2 div, .photos .ph3 div   {
+        margin-top: 18px ;
+    }
+    .reels h1 {
+        padding-bottom: 30px;
+    }
+    .detail-socials img{
+        width: 18px;
+    }
 }
